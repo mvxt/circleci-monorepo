@@ -7,10 +7,6 @@ jobs:
     docker:
       - image: circleci/golang
     working_directory: ~/circleci-monorepo
-    parameters:
-      paths:
-        description: "Folder paths to check for changes. Should match workflow boolean flags"
-        type: string
     steps:
       - checkout
       - run:
